@@ -1,0 +1,26 @@
+.animated-btn {
+  transition: background-color 0.4s, transform 0.3s;
+}
+
+.animated-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.fade-box {
+  animation: fadeSlide 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0.2; transform: translateY(0); }
+  to { opacity: 1; transform: translateY(-40px); }
+}
+
+#box {
+  transition: transform 0.8s ease, background-color 0.5s ease;
+}
+
+#box.animate {
+  transform: rotate(45deg) scale(1.2);
+  background-color: orange;
+}
